@@ -1,3 +1,6 @@
+# what is this?
+This is just a collection of some information about git which I may find useful ...
+
 # basic terminology
 
 ## sections
@@ -38,3 +41,15 @@ Each change which is about to be appliad to a git repository goes through the fo
 * does not alter the main line
 * different branches can be used to try out new things
 * can contain "save points"
+
+# files
+* **.git**
+	* config	- project specific configurations
+	* description	- only used by GitWeb
+	* **hooks**	- client- or server-side code to hook into git's lifecycle events
+	* **info**	- contains the global excludes file
+	* **objects**	- contains all commits
+	* **refs**	- contains pointers to commits
+
+# useful stuff
+* create repos of project skeletons (e.g. java cl app) and clone them when needed
