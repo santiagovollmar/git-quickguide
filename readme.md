@@ -51,5 +51,14 @@ Each change which is about to be appliad to a git repository goes through the fo
 	* **objects**	- contains all commits
 	* **refs**	- contains pointers to commits
 
+# logging
+Git automatically logs all commits.
+
+The following commands are used to show these logs
+* git log		- basic command
+* git log --oneline	- displays compact view
+* git log --stat	- displays extended view
+
 # useful stuff
 * create repos of project skeletons (e.g. java cl app) and clone them when needed
+
