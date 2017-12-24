@@ -21,6 +21,9 @@ To view the current status of these three areas, one can use `git staus`
 * fundamental of git
 * takes snapshot of local files and stores reference to it
 * each commit is being identified with its unique SHA-Hash
+* commits can also be tagged to make them stand out
+	* tags can be applied to a commit with `git tag -a {name} [SHA]`.
+	* tags can be deleted by applying the `-d` flag
 
 ### when to commit
 * each commit should have a single focus on a change/feature
@@ -130,6 +133,10 @@ lobbing lets you use special characters to match patterns/characters. In the .gi
 * [aA][bB]	<-> aB  && Ab    && ...
 
 **NOTE:** globbing in the `.gitignore` file is case-insensitive.
+
+# branching
+
+# merging
 
 # useful stuff
 * create repos of project skeletons (e.g. java webapp) and clone them when needed
