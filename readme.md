@@ -15,10 +15,29 @@ Each change which is about to be appliad to a git repository goes through the fo
 	2. Changes are added to the staging index. 
 	3. Changes in staging index get commited to the repository. Changes which are not in the staging index are ignored.
 
+To view the current status of these three areas, one can use `git staus`
+
 ## commit
 * fundamental of git
 * takes snapshot of local files and stores reference to it
 * each commit is being identified with its unique SHA-Hash
+
+### when to commit
+* each commit should have a single focus on a change/feature
+
+### good commit messages
+#### do
+* keep the message short (less than 60 characters)
+* explain what the commit does
+#### don't
+* explain why changes are made
+* explain how changes are made
+* use the word 'and'
+	* if 'and' must be used it would have been better to split the changes into two seperate commits
+
+If it has to be explained why a change has been made, the explanation should be written on a seperate line (under the first line containing the message).
+
+Further, a style guide for commit messages can be found [here](https://udacity.github.io/git-styleguide/ "udacity's commit message style guide")
 
 ## repository
 * directory which contains all files of project and git config files
@@ -88,5 +107,5 @@ idex XXXXXXX..XXXXXXX XXXXXX						//hash stuff
 Differences between old and new files can also be displayed with `git diff`
 
 # useful stuff
-* create repos of project skeletons (e.g. java cl app) and clone them when needed
+* create repos of project skeletons (e.g. java webapp) and clone them when needed
 
