@@ -151,7 +151,8 @@ To switch between different branches one may use `git checkout {name}`.
 Further, an interactive tutorial on git branchin is avaliable [here](https://learngitbranching.js.org/ "interactive git tutorial").
 
 # merging
-coming soon...
+Merging can be used to combine changes of two seperate branches. Branches are always merged into other branches leaving the branch that has been merged into anothter unaffected. For Example: if 'new_feature' is merged into 'master' then 'master' will contain all of its own commits plus the commits from 'new_feature'. However, 'new_feature' is unaffected by this merge. Each merge will create a new commit on the branch being affected. This kind of merge is being refered as a simple 'merge'.
+There is, however, another type of merge called the 'fast-forward merge'. It occurs when a branch, which is ahead of another branch, is merged into the other branch.
 
 # useful stuff
 * create repos of project skeletons (e.g. java webapp) and clone them when needed
