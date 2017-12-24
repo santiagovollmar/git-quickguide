@@ -106,6 +106,31 @@ idex XXXXXXX..XXXXXXX XXXXXX						//hash stuff
 
 Differences between old and new files can also be displayed with `git diff`
 
+# Git ignore
+If certain files should be ignored and not be added to the repository (e.g. CMake stuff), one may use the `.gitignore` file. Files can be exluded from the repository by just adding its name to the `.gitignore` file. Alternatively 'Globbing' can be used to exclude certain groups of files.
+
+## Globbing Crash Course
+lobbing lets you use special characters to match patterns/characters. In the .gitignore file, you can use the following:
+
+### syntax
+* blank lines can be used for spacing
+* \# - marks line as a comment
+* \* - matches 0 or more characters
+* ? - matches 1 character
+* [abc] - matches a, b, or c
+* \*\* - matches nested directories - a/**/z matches:
+	* a/z
+	* a/b/z
+	* a/b/c/z
+
+### examples
+* f*		<-> foo && fasdf && ...
+* f??		<-> foo && fas   && ...
+* [a-z][a-z]	<-> ab  && jf    && ...
+* [aA][bB]	<-> aB  && Ab    && ...
+
+**NOTE:** globbing in the `.gitignore` file is case-insensitive.
+
 # useful stuff
 * create repos of project skeletons (e.g. java webapp) and clone them when needed
 
