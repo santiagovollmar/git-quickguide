@@ -135,9 +135,19 @@ lobbing lets you use special characters to match patterns/characters. In the .gi
 **NOTE:** globbing in the `.gitignore` file is case-insensitive.
 
 # branching
+Branches allow for simultaneous development on different features/versions. By default the first branch is called 'master'. Each branch always has a branch pointer, which points to a specific commit. Different branches can diverge from each other on any commit. Each branch has its own commits, its own working directory and its own staging index.
+
+In each git repository there is a HEAD pointer which points to the currently active branch. New commits are always added to the branch which HEAD is currently pointing to.
+
+The `git branch` command is used to interact with git branches.
+Usage:
+* `git branch`			- show all branches
+* `git branch {name} [SHA]`	- create new branch (at commit with specified SHA)
+* `git branch -d [name]`	- delete existing branch
+
+To switch between different branches one may use `git checkout {name}`
 
 # merging
 
 # useful stuff
 * create repos of project skeletons (e.g. java webapp) and clone them when needed
-
