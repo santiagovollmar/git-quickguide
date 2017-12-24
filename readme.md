@@ -77,9 +77,10 @@ Further, a style guide for commit messages can be found [here](https://udacity.g
 Git automatically logs all commits.
 
 The following commands are used to show these logs
-* `git log [hash]`	- basic command
-* `--oneline`		- displays compact view
-* `--stat`		- displays extended view
+* `git log [hash]`			- basic command
+* `git log --oneline`			- displays compact view
+* `git log --stat`			- displays extended view
+* `git log --oneline --graph --all`	- displays an overview of all commits of each branch
 
 Alternatively `git show` can be used to show only one commit.
 
@@ -145,9 +146,12 @@ Usage:
 * `git branch {name} [SHA]`	- create new branch (at commit with specified SHA)
 * `git branch -d [name]`	- delete existing branch
 
-To switch between different branches one may use `git checkout {name}`
+To switch between different branches one may use `git checkout {name}`.
+
+Further, an interactive tutorial on git branchin is avaliable [here](https://learngitbranching.js.org/ "interactive git tutorial").
 
 # merging
+coming soon...
 
 # useful stuff
 * create repos of project skeletons (e.g. java webapp) and clone them when needed
