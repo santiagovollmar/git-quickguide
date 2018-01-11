@@ -1,6 +1,3 @@
-# what is this?
-This is just a collection of some information about git which I may find useful ...
-
 # basic terminology
 
 ## sections
